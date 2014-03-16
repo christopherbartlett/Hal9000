@@ -1,0 +1,101 @@
+body{
+
+	margin:0;
+	padding:0;
+
+	background-color:#000;
+
+}
+.canvas-main{
+
+	width:100%;
+	height:100%;
+	
+	background-color:#eee;
+
+}
+.wrapper{
+	
+	position:relative;
+	
+	width:960px;
+
+	margin:0 auto;
+
+}
+
+.voice-visualizer{
+	position:absolute;
+	bottom:-180px;
+	left:450px;
+
+	width:40px;
+	height:300px;
+transform:rotate(270deg);
+-ms-transform:rotate(270deg); /* IE 9 */
+-webkit-transform:rotate(270deg)	
+
+}
+
+.voice-visualizer-container{
+
+	float:left;
+	height:8px;
+	width:100%;
+	border:1px solid #000;
+
+}
+.voice-visualizer-outer{
+	float:left;
+	height:8px;
+
+
+}
+
+.voice-visualizer-inner{
+	float:left;
+	width:1px;
+	height:8px;
+
+	background-color:#ff0A1A;
+}
+
+
+.background{
+
+	width:500px;
+
+	padding-top:20px;
+
+	margin:0 auto;
+
+}
+
+.talkbox-wrapper{
+
+	position:absolute;
+	top:460px;
+	right:335px;
+
+	width:300px;
+	height:430px;
+
+}
+
+.talkbox-text{
+	outline:none;
+	margin-top:-28px;
+	
+	background-color:#000;
+}
+
+.talkbox-submit{
+	position:absolute;
+	bottom:-3px;
+	right:0px;
+
+	width:60px;
+
+	outline:none;
+
+}
