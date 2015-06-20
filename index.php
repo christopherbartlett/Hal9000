@@ -7,9 +7,13 @@
 
 	<script LANGUAGE="JavaScript" TYPE="text/javascript" SRC="./framework/elizabot/elizabot.js"></script>
 	<script LANGUAGE="JavaScript" TYPE="text/javascript" SRC="./framework/elizabot/elizadata.js"></script>
+	<script src="http://code.responsivevoice.org/responsivevoice.js"></script>
 	<script LANGUAGE="JavaScript" TYPE="text/javascript" SRC="./framework/speak/speakClient.js"></script>
+	<script src="http://code.responsivevoice.org/responsivevoice.js"></script>
 	<script LANGUAGE="JavaScript" TYPE="text/javascript">
+
 <!--
+///ASANA API KEY - 51zV21j4.MhXP8YgJwJmnPe3ZF1LMSPs
 
 var eliza = new ElizaBot();
 var elizaLines = new Array();
@@ -50,14 +54,14 @@ function elizaStep() {
 		f.e_display.value = rpl;//elizaLines.join('\n');
 		
 		
-		speak(rpl, { pitch: 30 }, { speed: 60 }, {wordgap: 50})
+		responsiveVoice.speak(rpl, "UK English Male");;//speak(rpl, { pitch: 30 }, { speed: 60 }, {wordgap: 50})
 	}
 	else if (elizaLines.length == 0) {
 		// no input and no saved lines -> output initial
 		var initial = '' + eliza.getInitial();
 		elizaLines.push(initial);
 		f.e_display.value = initial + '\n' ;
-		speak(initial, { pitch: 30 }, { speed: 60 }, {wordgap: 100})
+		responsiveVoice.speak(initial, "UK English Male");//speak(initial, { pitch: 30 }, { speed: 60 }, {wordgap: 100})
 	}
 	f.e_input.value = '';
 	f.e_input.focus();

@@ -343,6 +343,9 @@ var elizaKeywords = [
      "Do you enjoy being (2) ?",
      "Do you know anyone else who is (2) ?"
   ]],
+ ["who is the pretties girl i know", [
+     "That is easy Christopher. It is Kaitlin."
+  ]],
  ["* i @cannot *", [
      "How do you know that you can't (3) ?",
      "Have you tried ?",
